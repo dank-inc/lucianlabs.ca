@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script> -->
+    <title>Dank Space Battle</title>
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="game-info">
+        <div id="game-stats">
+          <p>Score: <span id="score">0</span></p>
+          <p>Gems: <span id="gems">0</span></p>
+        </div>
+      </div>
+      <div id="game-wrapper">
+        <canvas id="game" width="800" height="600"></canvas>
+      </div>
+      <div id="game-message" class="hidden">
+        <h1 id="game-over">GAME OVER</h1>
+        <button id="reset-button" onClick="resetGame()">Try Again</button>
+      </div>
+    </div>
+    <script src="utils/index.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

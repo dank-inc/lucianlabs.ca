@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucian Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #202020;
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+      }
+
+      #title {
+        font-size: 4em;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+          0 0 40px #00ff00;
+
+        animation: glow 2s ease-in-out infinite alternate,
+          rotatehue 10s linear infinite;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+            0 0 40px #00ff00;
+        }
+        to {
+          text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00,
+            0 0 50px #00ff00, 0 0 60px #00ff00;
+        }
+      }
+
+      @keyframes rotatehue {
+        from {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      .content {
+        padding: 2rem 4rem;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        max-width: 900px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Changa One", cursive;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Lucian Labs</h1>
+    <div class="content">
+      <p>
+        Welcome to Lucian Labs, where we leverage 17+ years of experience in the
+        tech industry to build robust and scalable applications. Specializing in
+        modern technologies like React, TypeScript, Ruby on Rails, and Express,
+        we've worked on everything from business systems to construction leads
+        platforms.
+      </p>
+      <p>
+        At Lucian Labs, we believe in the power of continuous learning and
+        problem-solving. Whether you're looking for a full-stack solution or
+        want to explore the potential of AI and VR/AR technologies, we've got
+        you covered. With our creative edge, we'll push the boundaries of what's
+        possible in web development.
+      </p>
+    </div>
+  </body>
+</html>

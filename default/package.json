@@ -1,0 +1,11 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "rsync -rv index.html lucianlabs.ca:/var/www/html/index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
